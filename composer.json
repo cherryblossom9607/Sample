@@ -1,0 +1,11 @@
+{
+    "require": {
+        "google/apiclient": "*"
+    },
+    "scripts": {
+        "post-install": "Composer\\Config::disableProcessTimeout(); vendor/bin/phpunit"
+    },
+    "config": {
+        "process-timeout": 900
+    }
+}
